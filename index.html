@@ -8,6 +8,14 @@
      <a-assets>
     <a-asset-item id="bonnie-model" src="bonnie_the_bunny (1).glb"></a-asset-item>
     <a-box position="0 0.05 0" width="1" height="0.1" depth="1" color="#FF0000" opacity="0.3"></a-box>
+<a-asset-item id="bboy" src="ballon_boy_v3.glb"></a-asset-item>
+    <a-box position="0 0.05 0" width="1" height="0.1" depth="1" color="#FF0000" opacity="0.3"></a-box>
+    <a-asset-item id="ballora" src="fnaf_5_ballora.glb"></a-asset-item>
+    <a-box position="0 0.05 0" width="1" height="0.1" depth="1" color="#FF0000" opacity="0.3"></a-box>
+    <a-asset-item id="djmusic" src="fnaf_security_breach__mini-music-man_switch.glb"></a-asset-item>
+    <a-box position="0 0.05 0" width="1" height="0.1" depth="1" color="#FF0000" opacity="0.3"></a-box>
+
+
 
   </a-assets>
 
@@ -16,7 +24,11 @@
   gltf-model="#bonnie-model" 
   position="0 0.1 0" 
   scale="0.3 0.3 0.3" 
-  rotation="0 180 0">
+  rotation="0 360 0"
+  gltf-model="#ballora" 
+  position="0 0.1 7" 
+  scale="0.3 0.3 0.3" 
+  rotation="0 0 0">
 </a-entity>
       <a-entity position="0 10 10" rotation="-60 0 0">
         <a-camera></a-camera>
@@ -26,10 +38,44 @@
       <a-entity camera wasd-controls look-controls position="0 1.6 0">
         <a-cursor></a-cursor>
       </a-entity>
-      <a-entity text="value: minecraft chafa kev; color: #FAFAFA; width: 5; anchor: align"
-          position="-0.9 0.2 -3"
-          scale="1.5 1.5 1.5"></a-entity>
+     
+      <!-- Bonnie en casillas específicas -->
+      <a-entity gltf-model="#bonni-model" position="0 0.1 0" scale="0.3 0.3 0.3"></a-entity> 
+      <a-entity gltf-model="#bonnie-model" position="7 0.1 0" scale="0.3 0.3 0.3"></a-entity> 
+      <a-entity gltf-model="#bonnie-model" position="3 0.1 0" scale="0.3 0.3 0.3"></a-entity> 
+      <a-entity gltf-model="#bonnie-model" position="4 0.1 0" scale="0.3 0.3 0.3"></a-entity>
+       <a-entity gltf-model="#bonnie-model" position="5 0.1 0" scale="0.3 0.3 0.3"></a-entity> 
+      <a-entity gltf-model="#bonnie-model" position="6 0.1 0" scale="0.3 0.3 0.3"></a-entity> 
+      <a-entity gltf-model="#bonnie-model" position="2 0.1 0" scale="0.3 0.3 0.3"></a-entity> 
+      <a-entity gltf-model="#bonnie-model" position="1 0.1 0" scale="0.3 0.3 0.3"></a-entity>
 
+      <a-entity gltf-model="#bboy" position="0 0.1 1" scale="0.1 0.1 0.1"></a-entity> 
+      <a-entity gltf-model="#bboy" position="7 0.1 1" scale="0.1 0.1 0.1"></a-entity> 
+      <a-entity gltf-model="#bboy" position="3 0.1 1" scale="0.1 0.1 0.1"></a-entity> 
+      <a-entity gltf-model="#bboy" position="4 0.1 1" scale="0.1 0.1 0.1"></a-entity>
+       <a-entity gltf-model="#bboy" position="5 0.1 1" scale="0.1 0.1 0.1"></a-entity> 
+      <a-entity gltf-model="#bboy" position="6 0.1 1" scale="0.1 0.1 0.1"></a-entity> 
+      <a-entity gltf-model="#bboy" position="2 0.1 1" scale="0.1 0.1 0.1"></a-entity> 
+      <a-entity gltf-model="#bboy" position="1 0.1 1" scale="0.1 0.1 0.1"></a-entity>
+
+       <a-entity gltf-model="#ballora" position="0 0.1 7" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#ballora" position="7 0.1 7" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#ballora" position="3 0.1 7" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#ballora" position="4 0.1 7" scale="1 1 1"></a-entity>
+       <a-entity gltf-model="#ballora" position="5 0.1 7" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#ballora" position="6 0.1 7" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#ballora" position="2 0.1 7" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#ballora" position="1 0.1 7" scale="1 1 1"></a-entity>
+
+      <a-entity gltf-model="#djmusic" position="0 -2.1 6" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#djmusic" position="7 -2.1 6" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#djmusic" position="3 -2.1 6" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#djmusic" position="4 -2.1 6" scale="1 1 1"></a-entity>
+      <a-entity gltf-model="#djmusic" position="5 -2.1 6" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#djmusic" position="6 -2.1 6" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#djmusic" position="2 -2.1 6" scale="1 1 1"></a-entity> 
+      <a-entity gltf-model="#djmusic" position="1 -2.1 6" scale="1 1 1"></a-entity>
+        
       <!-- Tablero  -->
       <a-entity id="tablero">
         <!-- 64  -->
