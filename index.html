@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     <a-assets>
+    <a-asset-item id="bonnie-model" src="bonnie_the_bunny (1).glb"></a-asset-item>
+    <a-box position="0 0.05 0" width="1" height="0.1" depth="1" color="#FF0000" opacity="0.3"></a-box>
+
+  </a-assets>
+
+ <a-box width="1" height="0.1" depth="1">
+  <a-entity 
+  gltf-model="#bonnie-model" 
+  position="0 0.1 0" 
+  scale="0.3 0.3 0.3" 
+  rotation="0 180 0">
+</a-entity>
+      <a-entity position="0 10 10" rotation="-60 0 0">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-light type="ambient" color="#ffffff"></a-light>
+
+      <a-entity camera wasd-controls look-controls position="0 1.6 0">
+        <a-cursor></a-cursor>
+      </a-entity>
+      <a-entity text="value: minecraft chafa kev; color: #FAFAFA; width: 5; anchor: align"
+          position="-0.9 0.2 -3"
+          scale="1.5 1.5 1.5"></a-entity>
+
+      <!-- Tablero  -->
+      <a-entity id="tablero">
+        <!-- 64  -->
+        <script>
+          const tablero = document.querySelector('#tablero');
+          const size = 1;
+          for (let x = 0; x < 8; x++) {
+            for (let z = 0; z < 8; z++) {
+              const color = (x + z) % 2 === 0 ? '#ffffff' : '#000000';
+              const box = document.createElement('a-box');
+              box.setAttribute('position', `${x * size} 0 ${z * size}`);
+              box.setAttribute('width', size);
+              box.setAttribute('height', 0.1);
+              box.setAttribute('depth', size);
+              box.setAttribute('color', color);
+              tablero.appendChild(box);
+            }
+          }
+        </script>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
